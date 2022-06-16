@@ -12,7 +12,44 @@ img {
     height: 100vh;
 }
 
+input {
+    display: block;
+    margin-top: 8px;
+}
+
+input:focus {
+    box-shadow: 3px 3px 4px white;
+    border: none;
+}
+header {
+    margin-top: 5vh;
+}
+
+form {
+    width: min(50vh, 800px);
+    display:flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+
+button{
+    width: 200px;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;    color: white;
+    float: right;
+    
+    margin: 0;
+    font-size: 100px;
+
+}
 /**********************************class***************************************/
+
+header, .form-section, footer{
+    padding: 48px;
+}
 
 .content {
     background-color: #141213;
@@ -23,4 +60,37 @@ img {
     justify-content: space-around;
 
 }
+
+a {
+    color: #283f74;
+}
+.form-section{
+    box-shadow:0px 4px 12px white;
+    padding-bottom: 36px;
+}
+
+.image{
+    position: relative;
+    z-index: -1;
+    
+}
+
+.logo > img {
+    width: 300px;
+    height: auto;
+    filter: invert(96%);
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 130px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.8);
+
+}
+
 
